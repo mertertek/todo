@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'todoapp',
+    'todoapp.apps.TodoappConfig',
+    'rest_framework',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
