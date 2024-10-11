@@ -10,7 +10,7 @@ class TodoSerializer(serializers.ModelSerializer):
 
     def validate_todo_date(self, value):
         if value < date.today():
-            raise serializers.ValidationError("Todo tarihi geçmiş bir tarih olamaz.")
+            raise serializers.ValidationError("The to do date cannot be a past date.")
         return value
 
 
